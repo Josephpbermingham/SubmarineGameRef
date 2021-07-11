@@ -12,18 +12,23 @@ namespace SubmarineGameRef
         private const string IsMineReturnText = "You hit a mine! Take 1 damage";
         private const string ValidMoveReturnText = "You have successfully moved";
 
-        private Coordinate coordinates;
+        private int xpos;
+        private int ypos;
         private string ResidentPlayerName;
         private bool HasLand;
         private bool HasPlayer;
         private bool HasMine; 
 
 
-        public GridSquare(Coordinate coordinate)
+        public GridSquare(int CurX, int CurY)
         {
-            this.coordinates = coordinate;
+            this.xpos = CurX;
+            this.ypos = CurY;
         }
-
+        public string ToString()
+        {
+            return this.xpos + " " + this.ypos;
+        }
         public string PlayerEnters()
         {
             if (HasLand)

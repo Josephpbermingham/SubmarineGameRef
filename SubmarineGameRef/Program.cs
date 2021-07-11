@@ -14,14 +14,12 @@ namespace SubmarineGameRef
         [STAThread]
         static void Main()
         {
-            GameBoard Game = new GameBoard(3);
-            foreach (var item in Game.MasterGameBoard)
-            {
-                foreach (var subItem in Game.MasterGameBoard)
-                {
+            new Game().PlayGame(2, 5);
+        }
 
-                }
-            }
+        static void PlayGame()
+        {
+
         }
     }
 }
