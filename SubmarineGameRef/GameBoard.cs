@@ -42,5 +42,15 @@ namespace SubmarineGameRef
             }
             return retStr;
         }
+
+        public GridSquare GetGridSquare(int x, int y)
+        {
+            return MasterGameBoard[x, y];
+        }
+        public GridSquare PlayerStartsAtGridSquare(int x, int y)
+        {
+            MasterGameBoard[x, y].PlayerEnters();
+            return MasterGameBoard[x, y];
+        }
     }
 }
