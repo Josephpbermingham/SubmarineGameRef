@@ -43,5 +43,9 @@ namespace SubmarineGameRef
             this.HasPlayer = true;
             return ValidMoveReturnText;
         }
+        public void PlayerLeaves()
+        {
+            this.HasPlayer = false;
+        }
     }
 }

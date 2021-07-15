@@ -13,5 +13,12 @@ namespace SubmarineGameRef
             this.Name = name;
             CurrentLocation = curr;
         }
+        public void goNorth(GameBoard gameBoard)
+        {
+            //you need to:
+                //call gameBoard[coordinates of player].PlayerLeaves on the old square,
+                //call Player enters on the new square
+                //update this.currentLocation
+        }
     }
 }
