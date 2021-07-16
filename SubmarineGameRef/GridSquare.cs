@@ -12,12 +12,12 @@ namespace SubmarineGameRef
         private const string IsMineReturnText = "You hit a mine! Take 1 damage";
         private const string ValidMoveReturnText = "You have successfully moved";
 
-        private int xpos;
-        private int ypos;
-        private string ResidentPlayerName;
-        private bool HasLand;
-        private bool HasPlayer;
-        private bool HasMine; 
+        public int xpos { get; set; }
+        public int ypos { get; set; }
+        public string ResidentPlayerName { get; set; }
+        public bool HasLand { get; set; }
+        public bool HasPlayer { get; set; }
+        public bool HasMine { get; set; }
 
 
         public GridSquare(int CurX, int CurY)
@@ -47,5 +47,6 @@ namespace SubmarineGameRef
         {
             this.HasPlayer = false;
         }
+
     }
 }

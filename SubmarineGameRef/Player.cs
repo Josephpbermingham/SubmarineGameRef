@@ -19,6 +19,8 @@ namespace SubmarineGameRef
                 //call gameBoard[coordinates of player].PlayerLeaves on the old square,
                 //call Player enters on the new square
                 //update this.currentLocation
+
+            //notes. There is a GameBoard.getGridSquare and a GameBoard.setGridSquare
         }
     }
 }

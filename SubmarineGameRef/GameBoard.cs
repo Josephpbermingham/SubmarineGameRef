@@ -14,8 +14,6 @@ namespace SubmarineGameRef
         {
             this.size = size;
             var tempGameboard = new GridSquare[size, size];
-            int curX = 0;
-            int curY = 0;
 
             for (int i = 0; i < size; i++)
             {
@@ -47,10 +45,16 @@ namespace SubmarineGameRef
         {
             return MasterGameBoard[x, y];
         }
+        public GridSquare SetGridSquare(GridSquare UpdatedSquare)
+        {
+            MasterGameBoard[UpdatedSquare.xpos, UpdatedSquare.ypos] = UpdatedSquare;
+            return UpdatedSquare;
+        }
         public GridSquare PlayerStartsAtGridSquare(int x, int y)
         {
             MasterGameBoard[x, y].PlayerEnters();
             return MasterGameBoard[x, y];
         }
+
     }
 }
